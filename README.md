@@ -1,6 +1,6 @@
 # 🥇 Gold Price Forecasting
 
-A end-to-end time series forecasting project comparing 9 models —
+An end-to-end time series forecasting project comparing 9 models —
 from simple baselines to deep learning — on 55 years of gold price data.
 Built as a portfolio project to demonstrate rigorous data science methodology,
 honest model evaluation, and interactive data storytelling.
@@ -12,11 +12,9 @@ honest model evaluation, and interactive data storytelling.
 
 ## 📌 Key Finding
 
-LSTM was the only model to follow the trend of gold's unprecedented surge
-from $2,100 to $5,000+ (2024–2026), achieving an MAE of $387 — nearly 3×
-better than the next best model. However, all models underestimated the
-magnitude of the surge, confirming that univariate models trained only on
-price history cannot capture geopolitical and macroeconomic shocks.
+LSTM captured the direction of gold's recent surge (2024–2026) better than other models, achieving the lowest MAE ($387). However, all models underestimated the magnitude of the increase.
+
+This highlights a core limitation: models trained only on historical prices cannot capture external drivers such as geopolitical events and macroeconomic shifts.
 
 ---
 
@@ -127,6 +125,15 @@ folder, then:
 ```bash
 streamlit run app/app.py
 ```
+
+---
+## 🧠 Final Insight
+
+This project demonstrates that forecasting performance is not just determined by model complexity, but by the information available in the data.
+
+When key external variables are missing, even advanced models fail to capture real-world behavior.
+
+Understanding these limitations is as important as building the models themselves.
 
 ---
 
