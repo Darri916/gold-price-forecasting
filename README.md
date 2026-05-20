@@ -5,7 +5,7 @@ from simple baselines to deep learning — on 55 years of gold price data.
 Built as a portfolio project to demonstrate rigorous data science methodology,
 honest model evaluation, and interactive data storytelling.
 
-**🔗 Live Dashboard:**   
+**🔗 Live Dashboard:** [→ Try the live dashboard](https://gold-price-forecasting-darranya.streamlit.app/)
 **📊 Dataset:** [Global Gold Price Dataset (Kaggle)](https://www.kaggle.com/datasets/mdmahfuzsumon/global-gold-price-dataset-18332026-monthly)
 
 ---
@@ -105,9 +105,10 @@ time series.
 - 📉 Interactive price history (1971–2026) with 12 annotated historical
   events
 - 📊 Model comparison chart with MAE for all 9 models
-- 🔮 Forecast section — select any model and forecast horizon (1–24 months)
+- 🔮 Forecast section — select any model and forecast horizon (1–24 months) starting from March 2026
 - 📐 Confidence intervals on all forecasts
 - ⚠️ Disclaimer — forecasts are not financial advice
+- 
 
 ---
 
