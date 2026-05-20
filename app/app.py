@@ -5,6 +5,12 @@ import plotly.graph_objects as go
 import joblib
 import os
 
+try:
+    import tensorflow as tf
+    TF_AVAILABLE = True
+except ImportError:
+    TF_AVAILABLE = False
+
 # ── Page config ────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Gold Price Forecasting",
@@ -274,8 +280,7 @@ MODEL_OPTIONS = [
     "Exponential Smoothing",
     "Random Forest",
     "XGBoost",
-    "LSTM",
-]
+] + (["LSTM"] if TF_AVAILABLE else [])
 
 col1, col2 = st.columns([2, 1])
 with col1:
@@ -335,7 +340,6 @@ def load_xgb():
 
 @st.cache_resource
 def load_lstm():
-    import tensorflow as tf
     model = tf.keras.models.load_model(os.path.join(MODELS_DIR, "lstm_model.keras"))
     return model
 
