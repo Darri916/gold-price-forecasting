@@ -6,6 +6,7 @@ scikit-learn
 statsmodels
 pmdarima
 xgboost
+tensorflow==2.20.0
 scipy
 matplotlib
 joblib
